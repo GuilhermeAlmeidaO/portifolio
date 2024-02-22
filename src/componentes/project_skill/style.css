@@ -63,7 +63,10 @@
     border: 1px solid var(--cor-terciaria);
     padding: 25px;
     height: auto;
+    width: 25%;
     transition: transform 0.2s ease;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .todos-projetos__content__card:hover{
@@ -73,8 +76,14 @@
 .todos-projetos__content__card__repos_name{
     font-size: 1.75rem;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
-.todos-projetos__content__card__link{
+.todos-projetos__content__card__link__div > *{
     text-decoration: none;
+    color: rgba(60,42,33,1);
+}
+
+.todos-projetos__content__card__link__div:hover > *{
+    text-decoration: underline;
 }
