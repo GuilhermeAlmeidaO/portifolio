@@ -98,3 +98,55 @@
 .todos-projetos__content__card__link__div:hover > *{
     text-decoration: underline;
 }
+
+.popUpSkillDetails {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: var(--cor-hover);
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+
+    border-top-left-radius: 1.75rem;
+    border-bottom: 3px solid;
+    border-image: radial-gradient(circle, rgba(229,229,203,1) 0%, rgba(213,206,163,1) 50%, rgba(60,42,33,1) 100%);
+    border-image-slice: 1;
+}
+
+.popUpSkillDetailsProtectScreen{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popUpSkillDetails__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+}
+
+.popUpSkillDetails__button:hover{
+    border: 1px solid black;
+}
+
+.popUpSkillDetails p{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.popUpSkillDetails img{
+    margin-top: 25px;
+    width: 4rem;
+}
